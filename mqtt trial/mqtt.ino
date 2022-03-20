@@ -53,4 +53,9 @@ void setup() {
 }
 
 void loop() {
+  if (!client.connected())  
+  {
+    reconnect();
+  }
+  client.loop();
 }
