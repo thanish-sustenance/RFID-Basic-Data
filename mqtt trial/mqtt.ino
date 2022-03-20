@@ -12,7 +12,6 @@ WiFiClient wclient;
 PubSubClient client(wclient); 
 bool state=0;
 
-// Connect to WiFi network
 void setup_wifi() {
   Serial.print("\nConnecting to ");
   Serial.println(ssid);
